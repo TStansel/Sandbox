@@ -12,7 +12,7 @@ export default function SwipeableImage({user}) {
                     <Text style={[styles.textSecondary, styles.textShadow]}>{user.dob.age}</Text>
                 </View>
                 <View style={styles.textRow}>
-                    <FontAwesome name="map-marker"></FontAwesome>
+                    <FontAwesome name="map-marker" size={20} color='white'></FontAwesome>
                     <Text style={[styles.textSecondary, styles.textShadow]}>{user.location.city}</Text>
                 </View>
             </View>

@@ -5,7 +5,8 @@ import Constants from 'expo-constants'
 import TopBar from './components/TopBar'
 import axios from 'axios'
 import SwipeableImage from './components/SwipeableImage'
-
+import BottomBar from './components/BottomBar'
+import Swipes from './components/Swipes'
 export default function App() {
   const [users, setUsers] = useState([])
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -23,16 +24,26 @@ export default function App() {
     fetchUsers()
   }, [])
 
+  function handleLike(){
+    nextUser()
+  }
+
+  function nextUser(){
+    const nextIndex = users.length - 2 == currentIndex ? 0 : currentIndex + 1
+    setCurrentIndex(nextIndex)
+  }
+
   return (
     <View style={styles.container}>
       <TopBar />
       <View style={styles.swipes}>
-        {users.length > 1 &&(
-          <SwipeableImage user={users[currentIndex]}>
-
-          </SwipeableImage>
-        )}
-      </View>
+        {users.length > 1 && 
+          users.map(
+            (u,i) => (
+              currentIndex == i && (<Swipes key={i} currentIndex={currentIndex} users={users} handleLike={handleLike}></Swipes>)
+          ))}
+        </View>
+      <BottomBar />
     </View>
   );
 }
