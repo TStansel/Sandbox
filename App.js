@@ -114,7 +114,7 @@ export default function App() {
   }
 
   function handleApplicationBackPress(){
-    setApplicationVisible(!isProfileVisible);
+    setApplicationVisible(!isApplicationVisible);
   }
 
   function handleInfoBackPress(){
