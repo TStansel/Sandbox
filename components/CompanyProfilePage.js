@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import data from './../db/student.json'
+
 import {
   StyleSheet,
   Text,
@@ -14,7 +14,7 @@ export default class CompanyProfilePage extends Component {
     return (
       <View style={styles.container}>
           <View style={styles.header}></View>
-          <Image style={styles.avatar} source={{uri: "https://d2jyir0m79gs60.cloudfront.net/news/images/successful-college-student-lg.png"}}/>
+          <Image style={styles.avatar} source={{uri: this.props.job.logo}}/>
           <View style={styles.extra}></View>
           <View style={styles.body}>
             <View style={styles.bodyContent}>
@@ -22,57 +22,38 @@ export default class CompanyProfilePage extends Component {
               <Text style={styles.description}>Lorem ipsum dolor sit amet, saepe sapientem eu nam. Qui ne assum electram expetendis, omittam deseruisse consequuntur ius an,</Text>
             </View>
             <View style={styles.nameView}>
-                <Text style={styles.name}> {data.name} </Text>
+                <Text style={styles.name}> {this.props.job.job_title} </Text>
             </View>
         </View>
-        <View style={styles.outerTextContainer}>
-            <View style={styles.innerTextContainer}>
-                <Text style={styles.infoHeader}> GPA: </Text><Text style={styles.info}> {data.gpa} </Text>
-            </View>
-        </View>
-        <View style={styles.outerTextContainer}>
-            <View style={styles.innerTextContainer}>
-                <Text style={styles.infoHeader}> School: </Text><Text style={styles.info}> {data.university} </Text>
-            </View>
-        </View>
-        <View style={styles.outerTextContainer}>
-            <View style={styles.innerTextContainer}>
-                <Text style={styles.infoHeader}> Major: </Text><Text style={styles.info}> {data.major} </Text>
-            </View>
-        </View>
-        <View style={styles.outerTextContainer}>
-            <View style={styles.innerTextContainer}>
-                <Text style={styles.infoHeader}> Degree Pursuing: </Text><Text style={styles.info}> {data.degree} </Text>
-            </View>
-        </View>
-        <View style={styles.outerTextContainer}>
-            <View style={styles.innerTextContainer}>
-                <Text style={styles.infoHeader}> Graduation Year: </Text><Text style={styles.info}> {data.grad_year} </Text>
+        <View style={styles.outerTextContainerStack}>
+            <View style={styles.innerTextContainerStack}>
+                <Text style={styles.infoHeader}> Job Description: </Text><Text style={styles.infoList}> {this.props.job.job_description} </Text>
             </View>
         </View> 
-        <View style={styles.outerTextContainerStack}>
-            <View style={styles.innerTextContainerStack}>
-                <Text style={styles.infoHeader}> Relevant Work Experience: </Text><Text style={styles.infoList}> 1.) {data.relevant_exp[0]} {"\n"} 2.) {data.relevant_exp[1]} {"\n"} 3.) {data.relevant_exp[2]} </Text>
-            </View>
-        </View>
-        <View style={styles.outerTextContainerStack}>
-            <View style={styles.innerTextContainerStack}>
-                <Text style={styles.infoHeader}> Volunteer Experience: </Text><Text style={styles.infoList}> 1.) {data.volunteer_exp[0]} {"\n"} 2.) {data.volunteer_exp[1]} {"\n"} 3.) {data.volunteer_exp[2]} </Text>
-            </View>
-        </View>   
-        <View style={styles.outerTextContainerStack}>
-            <View style={styles.innerTextContainerStack}>
-                <Text style={styles.infoHeader}> Awards: </Text><Text style={styles.infoList}> 1.) {data.awards[0]} {"\n"} 2.) {data.awards[1]} {"\n"} 3.) {data.awards[2]} </Text>
-            </View>
-        </View>     
         <View style={styles.outerTextContainer}>
             <View style={styles.innerTextContainer}>
-                <Text style={styles.infoHeader}> Available to work: </Text><Text style={styles.info}> {data.availbility_date} </Text>
+                <Text style={styles.infoHeader}> Start Date: </Text><Text style={styles.info}> {this.props.job.start_date} </Text>
             </View>
         </View>
         <View style={styles.outerTextContainer}>
             <View style={styles.innerTextContainer}>
-                <Text style={styles.infoHeader}> LinkedIn Profile: </Text><Text style={styles.info}> {data.linked_in} </Text>
+                <Text style={styles.infoHeader}> Schedule: </Text><Text style={styles.info}> {this.props.job.schedule} </Text>
+            </View>
+        </View>
+        <View style={styles.outerTextContainerStack}>
+            <View style={styles.innerTextContainerStack}>
+                <Text style={styles.infoHeader}> Qualifications: </Text><Text style={styles.infoList}> 1.) {this.props.job.qualifications[0]} {"\n"} 2.) {this.props.job.qualifications[1]} {"\n"} 3.) {this.props.job.qualifications[2]} </Text>
+            </View>
+        </View>    
+        <View style={styles.outerTextContainer}>
+            <View style={styles.innerTextContainer}>
+                <Text style={styles.infoHeader}> Benefits: </Text><Text style={styles.info}> {this.props.job.benefits} </Text>
+
+            </View>
+        </View>
+        <View style={styles.outerTextContainer}>
+            <View style={styles.innerTextContainer}>
+                <Text style={styles.infoHeader}> Company Website: </Text><Text style={styles.info}> {this.props.job.website} </Text>
             </View>
         </View>
 
@@ -85,6 +66,8 @@ export default class CompanyProfilePage extends Component {
 const styles = StyleSheet.create({
   nameView:{
     alignItems: 'center',
+    textAlign: 'center',
+
   },
   extra:{
     paddingBottom: 20,
@@ -129,6 +112,7 @@ const styles = StyleSheet.create({
     fontSize:22,
     color:"#FFFFFF",
     fontWeight:'600',
+    textAlign: 'center',
   },
   body:{
     marginTop:40,
