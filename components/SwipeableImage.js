@@ -2,30 +2,22 @@ import React from 'react'
 import {View, Image, StyleSheet, Text} from 'react-native'
 import {FontAwesome} from '@expo/vector-icons'
 
-export default function SwipeableImage({user, willLike, willPass}) {
+export default function SwipeableImage({job, pictures, picIndex}) {
     return (
         <View>
-            <Image source={{uri: user.picture.large}} style={styles.photo} />
-            {willLike && (
-                <View style={styles.likeBox}> 
-                    <Text style={{... styles.textPrimary, color:'#64EDCC'}}>LIKE</Text>
-                </View>
-
-            )}
-            {willPass && (
-                <View style={styles.passBox}> 
-                    <Text style={{... styles.textPrimary, color:'#F06795'}}>PASS</Text>
-                </View>
-
-            )}
+            <View style={styles.photoContainer}>
+                <Image source={{uri: pictures[picIndex]}} style={styles.photo} />
+            </View>
             <View style={styles.textContainer}>
                 <View style={styles.textRow}>
-                    <Text style={[styles.textPrimary, styles.textShadow]}>{user.name.first}</Text>
-                    <Text style={[styles.textSecondary, styles.textShadow]}>{user.dob.age}</Text>
+                    <Text style={[styles.textPrimary]}>{job.job_title}</Text>
                 </View>
                 <View style={styles.textRow}>
-                    <FontAwesome name="map-marker" size={20} color='white'></FontAwesome>
-                    <Text style={[styles.textSecondary, styles.textShadow]}>{user.location.city}</Text>
+                    <Text style={[styles.textSecondary]}>{job.name}</Text>
+                </View>
+                <View style={styles.textRow}>
+                    <FontAwesome name="map-marker" size={20} color='black'></FontAwesome>
+                    <Text style={[styles.textSecondary]}>{job.location}</Text>
                 </View>
             </View>
         </View>
@@ -54,9 +46,14 @@ const styles = StyleSheet.create({
         right: 40,
         borderColor: '#F06795'
     },
+    photoContainer:{
+        height: '100%'
+    },
     photo: {
-        height: '100%',
-        resizeMode: 'cover',
+        
+        height: '75%',
+        width: '100%',
+        resizeMode: 'center',
         borderRadius: 20,
     },
     textContainer: {
@@ -69,19 +66,15 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     textPrimary: {
-        color: 'white',
-        fontSize: 35,
-        marginLeft: 10,
-        fontWeight: 'bold'
+        color: 'black',
+        fontSize: 30,
+        marginLeft: 0,
+        fontWeight: 'bold',
     },
     textSecondary: {
-        color: 'white',
+        color: 'black',
         marginLeft: 10,
         fontSize: 25,
     },
-    textShadow: {
-        textShadowColor: 'rgba(0, 0, 0, 0.80)',
-        textShadowOffset: {width: -1, height: 1},
-        textShadowRadius: 10,
-    }
+
 })

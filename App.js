@@ -7,50 +7,52 @@ import axios from 'axios'
 import SwipeableImage from './components/SwipeableImage'
 import BottomBar from './components/BottomBar'
 import Swipes from './components/Swipes'
+import data from './db/jobs.json'
 export default function App() {
 
-  const [users, setUsers] = useState([])
-  const [currentIndex, setCurrentIndex] = useState(0)
-  const [jobs, setJobs] = useState([])
+  const [jobs, setJobs] = useState(data.jobs)
   const [currentJobIndex, setJobIndex] = useState(0)
+  const [pictures, setPictures] = useState(data.jobs[currentJobIndex].pictures)
+  const [currentPicIndex, setPicIndex] = useState(0)
   const swipesRef = useRef(null)
 
-  async function fetchUsers(){
+  function getJson(){
     try{
-      const {data} = await axios.get('https://randomuser.me/api/?gender=female&results=50')
-      setUsers(data.results)
-    } catch (error) {
-      console.log(error)
-      Alert.alert('Error getting users','', [{text: 'Retry', onPress: () => fetchUsers()}])
-    }
-  }
-
-  async function getJson(){
-    try{
-      const data = require('./db/jobs.json')
       setJobs(data.jobs)
     } catch (error) {
       console.log(error)
-      Alert.alert('Error getting users','', [{text: 'Retry', onPress: () => fetchUsers()}])
+      Alert.alert('Error getting jobs','', [{text: 'Retry', onPress: () => getJson()}])
     }
   }
 
+  async function getCompanyPics(){
+    try{
+      console.log(data.jobs[0].name)
+      setPictures(data.jobs[0].pictures)
+      
+    } catch (error) {
+      console.log(error)
+      Alert.alert('Error getting pics','', [{text: 'Retry', onPress: () => getCompanyPics()}])
+    }
+  }
+
+  
+
   useEffect(() => {
-    fetchUsers()
-    getJson()
+    console.log(jobs[currentJobIndex])
   }, [])
 
   function handleLike(){
-    nextUser()
+    nextPicture()
   }
 
   function handlePass(){
-    nextUser()
+    nextPicture()
   }
 
-  function nextUser(){
-    const nextIndex = users.length - 2 == currentIndex ? 0 : currentIndex + 1
-    setCurrentIndex(nextIndex)
+  function nextPicture(){
+    const nextIndex = pictures.length - 2 == currentPicIndex ? 0 : currentPicIndex + 1
+    setPicIndex(nextIndex)
   }
 
   function nextJob(){
@@ -67,9 +69,11 @@ export default function App() {
 
   function handleRightPress(){
     swipesRef.current.openLeft()
+    setPicIndex(0)
   }
   function handleLeftPress(){
     swipesRef.current.openRight()
+    setPicIndex(0)
   }
 
   function handleHomePress(){
@@ -83,15 +87,17 @@ export default function App() {
     <View style={styles.container}>
       <TopBar handleHomePress={handleHomePress} handleProfilePress={handleProfilePress}/>
       <View style={styles.swipes}>
-        {users.length > 1 && 
-          users.map(
+        {pictures.length > 1 && 
+          pictures.map(
             (u,i) => (
-              currentIndex == i && (
+              currentPicIndex == i && (
               <Swipes 
                 key={i} 
                 ref={swipesRef}
-                currentIndex={currentIndex} 
-                users={users} 
+                currentIndex={currentPicIndex} 
+                jobs={jobs}
+                pictures={pictures} 
+                picIndex={currentPicIndex}
                 handleLike={handleLike} 
                 handlePass={handlePass}
                 ></Swipes>)
