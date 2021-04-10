@@ -13,17 +13,17 @@ export default class Profile extends Component {
   render() {
     return (
       <View style={styles.container}>
-          <View style={styles.header}></View>
+          
+          <View style={styles.header}><View style={styles.nameView}>
+                <Text style={styles.name}> {data.name} </Text>
+            </View></View>
           <Image style={styles.avatar} source={{uri: "https://d2jyir0m79gs60.cloudfront.net/news/images/successful-college-student-lg.png"}}/>
-          <View style={styles.extra}></View>
           <View style={styles.body}>
             <View style={styles.bodyContent}>
               <Text style={styles.info}>UX Designer / Mobile developer</Text>
               <Text style={styles.description}>Lorem ipsum dolor sit amet, saepe sapientem eu nam. Qui ne assum electram expetendis, omittam deseruisse consequuntur ius an,</Text>
             </View>
-            <View style={styles.nameView}>
-                <Text style={styles.name}> {data.name} </Text>
-            </View>
+            
         </View>
         <View style={styles.outerTextContainer}>
             <View style={styles.innerTextContainer}>
@@ -84,6 +84,7 @@ export default class Profile extends Component {
 
 const styles = StyleSheet.create({
   nameView:{
+    paddingTop:40,
     alignItems: 'center',
   },
   extra:{
@@ -105,7 +106,7 @@ const styles = StyleSheet.create({
 },
   header:{
     backgroundColor: "#00BFFF",
-    height:150,
+    height:110,
     borderTopLeftRadius: 10,    
     borderTopRightRadius: 10,
   },
@@ -131,7 +132,7 @@ const styles = StyleSheet.create({
     fontWeight:'600',
   },
   body:{
-    marginTop:40,
+    marginTop:80,
   },
   bodyContent: {
     flex: 1,
@@ -140,7 +141,7 @@ const styles = StyleSheet.create({
   },
   name:{
     fontSize:28,
-    color: "#696969",
+    color: "#000000",
     fontWeight: "600"
   },
   info:{

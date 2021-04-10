@@ -1,7 +1,7 @@
 { 
   "jobs": [
       {
-          "logo": "https://media.glassdoor.com/sql/1549647/divvypay-squarelogo-1563289869394.png",
+          "logo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAe1BMVEX///8AAADKysrY2Nji4uLz8/P5+fnw8PBlZWXp6enOzs6QkJDS0tLf39/ExMTV1dUzMzN9fX1zc3OIiIiXl5e7u7ugoKCzs7MSEhIeHh4+Pj5LS0tubm4lJSWmpqaDg4NYWFg2NjZpaWlPT08XFxdeXl4rKys8PDy2trbEqsruAAAEmUlEQVR4nO3c53rqMAwGYAIhQBllpKyW1cHh/q/wECgjiYdkSBz1+d7/6LEax0N2WqsBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAZUWd+ro7mcSzRvORKOHbtNuNZ73W0xr2JP14GVy115FblNn4+xrkPQ6f28SHDN6DjE2HHaTTzQb5qhfQVhfhT7ZpR/OY+RzXC0WUNv8PVYCDqmlJN+O0rrVVB1m9FdZuslzfulq8koP0h9oocYFtJxlpm3b0QgzSmBuCbAptv1VsSjCYN0hBwpUxyrTgHIwGxqYFwZAyN0ZLS5RB4XlodfaWtgVtQhT9m3z5O/mb/o0v4Zm9i/XtQby9iq/2thG6WJsQhPY+P9+YkuHesvhqUIKMy0koq0VpWxBszVE2pCCPrObdzWgZBl1TkNY/UoxDWUmlkDppwjTx92gh/HRT00IkZWEY7dfEEOWlddOkJhgEH/ooH8QQPl5E0iD4a62NkttZavRLzOzCtmK7N9dOGTtiBOoi/pneGBkGS10U/bYpzcfalPMM9du8HfH3PgoapDXbjWbhZdtXWH5eKOKS5uJdXbehrEoTXrYXvAw1S5sp7cfzknM7+2SmqBwOX2i/NcyoBSIuR66U/bRDG0xnpWd3ahwzQ/V4SlvdeqqbfnFTVM37pG76U3puZ6w5P/GliqKqmGf1yk7tV8taiMpSrU8J+yc/40yCvEO8WKn6qTXKwt8pFHGov6PayTY1Bx9XfgbSk4g91ihX0JZ92KT0vO5wp8Qg2KvCGBfxn2UnlcJcmyaUk2JdXxEZlZ1TBqHqnaWcvLXHa16PZRLMLVRCXTaLlHXTna9i9x1auTNFs5kNc7PG0uMgenPgZ6jZKR4XuvHd2Dwc1R1vdDxZxF7XmCpvUViPRx+f4+6hUZ0LNeZTYKWVn1MIVx3zEbWS1zmcb8LP0Nd2z1HokKHvaZzJYdb3dqjrhnAQn+N3sclGPT+6V5VLeTScU6gLZUGjuiilliyP14AcEI+qU7SnUdXELX8nKnCvksHlTRT2EF3mRFlvosvCZluN3REV7WpTmqw5kXH35PYQfTeax2Gf6OWChbumw2afcr+2QvjVYT/3gNxF1OtNd4TtE+sOD1FWxYZ/2FaBkjaPw7S/kzXr278ryJO1dKvVbGedeb7uILhi312QVpOiX1O7EVYddtgokj6NqhL+8lTWXp/wIVrO1neTufhVKVmHGDWHlY3+OLGiWt/2pFKElaRqDpOirD1UgttPvX+uzcY9Fha21U8w++mqOrcSyJhV/ir9jw+iJm88pf/zherg9VNZVcVfrIMMkRk2d4wMfV1Ufwzn1qK8Kf+E+EXT0VzgbHFCrhALO2a7Cakfe0srZNxQ756KHErPaJf6Vr6b+YBI8/+t0oRV9tModf65tGJbGmH1JvoR1ghHGVvfLXyY5eKi8ms2WVrmr79k3ThR65hqxNIO19QM3/AJnuvTNMPNj7hqt15Pccd2OJO64FYbZLrqcCp1y6TXX1/XcPvuXxhClZr9l/rrH3r7AAAAAAAAAAAAAAAAAAAAAAAAAAAAAADy/gO+9TDGFuvzvAAAAABJRU5ErkJggg==",
           "pictures": [
             "https://www.insightpartners.com//assets/media/2019/12/Divvy.png",
             "https://media.glassdoor.com/l/1549647/divvypay-office.jpg",
@@ -19,11 +19,12 @@
           ],
           "benefits": "Free Divvy Card, Paid Time Off",
           "schedule": "9-5, M-F",
+          "start_date": "Fall 2021",
           "website": "https://getdivvy.com/careers/",
-          "question": "Divvy prides themself in high quality code. What personal habits/methodologies do you use to ensure high quality code." 
+          "question": "Divvy prides themself in high quality code. What personal habits/methodologies do you use to ensure high quality code?" 
         },
         {
-          "logo": "https://ww1.prweb.com/prfiles/2015/09/18/12971222/gI_90514_Chatbooks%20logo.png",
+          "logo": "https://media.glassdoor.com/sqll/1156697/chatbooks-squarelogo-1473271012050.png",
           "pictures": [
 
             "https://images.squarespace-cdn.com/content/v1/5c253e5dc258b456dd8217df/1547485852436-FAEYVOB298OACL6W9QFO/ke17ZwdGBToddI8pDm48kEMJz_jd-g36kmypioQ0LOtZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIQscvaC3g28Ju6M-Nirnlftrcz_nDWGrsBHAaUfWdN5MKMshLAGzx4R3EDFOm1kBS/Chatbooks-Logo.jpg",
@@ -40,12 +41,14 @@
             "Experience with the React JavaScript framework.",
             "Moderate experience in UX design."
           ],
+          "benefits": "Free Divvy Card, Paid Time Off",
           "schedule":"10-7, M-F",
+          "start_date": "Fall 2021",
           "website": "https://chatbooks.com/careers",
           "question": "What experience do you have in implimenting UX design with CSS?"
         },
         {
-          "logo": "https://www.bamboohr.com/images/global-logos/bamboohr-logo-main.svg",
+          "logo": "https://www.bamboohr.com/images/about/media-assets/b-logo-green.png",
           "pictures": [
 
             "https://employeecycle.com/wp-content/uploads/2019/08/bambooHR-1.png",
@@ -59,10 +62,13 @@
           "job_description": "Create applications to help HR employees comunicate with the executives.",
           "qualifications": [
             "Proficient in Objective-C or Swift",
-            "Experience with developing applicaitons in Xcode using Cocoa and CocoaTouch"
+            "Experience with developing applicaitons in Xcode using Cocoa and CocoaTouch",
+            "Excellent communication skills"
           ],
+          "benefits": "Free Divvy Card, Paid Time Off",
           "schedule":"40 hours a week",
-          "website": "https://www.indeed.com/jobs?q=BambooHR&l=Various+locations&mna=5&aceid=&gclid=Cj0KCQjwmcWDBhCOARIsALgJ2Qdc9GPsxWwmdrXBIDgoEcg1vEKmdrIOHyGzg4lEQJ5lrohNHN1g3hQaAoyWEALw_wcB",
+          "start_date": "Fall 2021",
+          "website": "https://www.indeed.com/jobs?q=BambooHR",
           "question": "Briefly describe (in 50 words or less) what iOS or MacOS apps you have written."
         },
         {
@@ -77,13 +83,15 @@
           "location": "Orem, Utah",
           "salary": "$25 an hour",
           "job_title": "Server Maintenance Specialist",
-          "job_description": "Help ouc clients to maintain the servers to host their websites. ",
+          "job_description": "Help our clients to maintain the servers to host their websites. ",
           "qualifications": [
             "Proficient in Linux commandline",
             "Experience with Vim or Emacs",
             "Understanding of HTTP, TCP, and other pertainate protocalls."
           ],
+          "benefits": "Free Divvy Card, Paid Time Off",
           "schedule":"8PM-4AM (Night Shift)",
+          "start_date": "Fall 2021",
           "website": "https://www.bluehost.com/bluehost/careers.html",
           "question": "Briefly write a description of your competency in Linux, Vim/Emacs, and internet protocalls."
         }
