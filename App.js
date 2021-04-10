@@ -20,6 +20,8 @@ export default function App() {
   const [currentPicIndex, setPicIndex] = useState(0)
   const swipesRef = useRef(null)
   const [isProfileVisible, setProfileVisible] = useState(false);
+  const [isInfoVisible, setInfoVisible] = useState(false);
+  const [isApplicationVisible, setApplicationVisible] = useState(false);
  
   function getJson(){
     try{
@@ -93,13 +95,21 @@ export default function App() {
   function handleHomePress(){
     swipesRef.current.openLeft()
   }
+
   function handleProfilePress(){
     setProfileVisible(!isProfileVisible);
-    console.log("profile")
   }
+
+  function handleInfoPress(){
+    setInfoVisible(!isInfoVisible);
+  }
+
+  function handleApplicationPress(){
+    setApplicationVisible(!isApplicationVisible);
+  }
+
   function handleBackPress(){
     setProfileVisible(!isProfileVisible);
-    console.log("back")
   }
 
   return (
@@ -128,7 +138,7 @@ export default function App() {
                 ></Swipes>)
           ))}
         </View>
-      <BottomBar handleCheckPress={handleCheckPress} handleInfoPress={handleInfoPress} handleRightPress={handleRightPress} handleLeftPress={handleLeftPress}/>
+      <BottomBar handleCheckPress={handleApplicationPress} handleInfoPress={handleInfoPress} handleRightPress={handleRightPress} handleLeftPress={handleLeftPress}/>
     </View>
   );
 }
