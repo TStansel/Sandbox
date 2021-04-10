@@ -42,26 +42,24 @@
         },
         {
           "pictures": [
-
-            "https://employeecycle.com/wp-content/uploads/2019/08/bambooHR-1.png",
-            "https://media.glassdoor.com/l/b3/8f/26/93/new-bambooligans-january-2018.jpg",
-            "https://media.glassdoor.com/l/a0/4a/62/32/customer-service-training.jpg"
-          ],
-          "name": "Bamboo HR",
-          "location": "Lindon, Utah",
-          "salary": "$18 an hour",
-          "job_title": "Native iOS and MacOs Application Developer",
-          "job_description": "Create iOS applications to help HR employees comunicate with the executives.",
-          "qualifications": [
-            "Proficient in Objective-C or Swift",
-            "Experience with developing applicaitons in Xcode using Cocoa and CocoaTouch"
-          ],
-          "schedule":"40 hours a week",
-          "website": "https://www.indeed.com/jobs?q=BambooHR&l=Various+locations&mna=5&aceid=&gclid=Cj0KCQjwmcWDBhCOARIsALgJ2Qdc9GPsxWwmdrXBIDgoEcg1vEKmdrIOHyGzg4lEQJ5lrohNHN1g3hQaAoyWEALw_wcB"
-        },
-        {
-          "pictures": [
-
+              "https://employeecycle.com/wp-content/uploads/2019/08/bambooHR-1.png",
+              "https://media.glassdoor.com/l/b3/8f/26/93/new-bambooligans-january-2018.jpg",
+              "https://media.glassdoor.com/l/a0/4a/62/32/customer-service-training.jpg"
+            ],
+            "name": "Bamboo HR",
+            "location": "Lindon, Utah",
+            "salary": "$18 an hour",
+            "job_title": "Native iOS and MacOs Application Developer",
+            "job_description": "Create iOS applications to help HR employees comunicate with the executives.",
+            "qualifications": [
+              "Proficient in Objective-C or Swift",
+              "Experience with developing applicaitons in Xcode using Cocoa and CocoaTouch"
+            ],
+            "schedule":"40 hours a week",
+            "website": "https://www.indeed.com/jobs?q=BambooHR&l=Various+locations&mna=5&aceid=&gclid=Cj0KCQjwmcWDBhCOARIsALgJ2Qdc9GPsxWwmdrXBIDgoEcg1vEKmdrIOHyGzg4lEQJ5lrohNHN1g3hQaAoyWEALw_wcB"
+          },
+          {
+            "pictures": [
             "https://cdn.wpml.org/wp-content/uploads/2018/04/Bluehost-Logo-EPS-vector-image.png",
             "https://media.glassdoor.com/l/e4/20/63/a2/ping-pong-in-the-lounge.jpg",
             "https://media.glassdoor.com/l/c5/27/ef/84/headquarters.jpg"
