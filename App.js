@@ -9,7 +9,8 @@ import BottomBar from './components/BottomBar'
 import Swipes from './components/Swipes'
 import ProfilePage from './components/ProfilePage'
 import Modal from 'react-native-modal';
-import DisplayProfile from './components/ProfilePage';
+import CompanyProfilePage from './components/CompanyProfilePage';
+import ApplyPage from './components/ApplyPage';
 import {FontAwesome5, FontAwesome} from '@expo/vector-icons'
 import data from './db/jobs.json'
 export default function App() {
@@ -112,6 +113,14 @@ export default function App() {
     setProfileVisible(!isProfileVisible);
   }
 
+  function handleApplicationBackPress(){
+    setApplicationVisible(!isProfileVisible);
+  }
+
+  function handleInfoBackPress(){
+    setInfoVisible(!isInfoVisible);
+  }
+
   return (
     <View style={styles.container}>
       <TopBar handleHomePress={handleHomePress} handleProfilePress={handleProfilePress}/>
@@ -120,7 +129,19 @@ export default function App() {
                 <FontAwesome5 name="arrow-left" size={27} color="#5c5c5c"/>
         </TouchableOpacity>
         <ProfilePage handleBackPress={handleBackPress}></ProfilePage>
-        </Modal>
+      </Modal>
+      <Modal isVisible={isInfoVisible} >
+        <TouchableOpacity style={styles.button} onPress={handleInfoBackPress}>
+                <FontAwesome5 name="arrow-left" size={27} color="#5c5c5c"/>
+        </TouchableOpacity>
+        <CompanyProfilePage handleBackPress={handleInfoBackPress} job={jobs[currentJobIndex]}></CompanyProfilePage>
+      </Modal>
+      <Modal isVisible={isApplicationVisible} >
+        <TouchableOpacity style={styles.button} onPress={handleApplicationBackPress}>
+                <FontAwesome5 name="arrow-left" size={27} color="#5c5c5c"/>
+        </TouchableOpacity>
+        <ApplyPage handleBackPress={handleApplicationBackPress}></ApplyPage>
+      </Modal>
       <View style={styles.swipes}>
         {pictures.length > 1 && 
           pictures.map(
