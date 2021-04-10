@@ -5,23 +5,19 @@ import Modal from 'react-native-modal';
 import ProfilePage from './ProfilePage'
 
 
-export default function TopBar({handleHomePress, handleProfilePress}) {
+export default function TopBarBack({handleBackPress}) {
     return (
         <View style={styles.container}>
-            <TouchableOpacity style={styles.button} onPress={handleHomePress}>
-                <FontAwesome5 name="clipboard" size={27} color="#5c5c5c"/>
+            <TouchableOpacity style={styles.button} onPress={ () => handleBackPress}>
+                <FontAwesome5 name="arrow-left" size={27} color="#5c5c5c"/>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.button} onPress={handleProfilePress}>
-                <FontAwesome name="user" size={27} color="#5c5c5c"/>
-            </TouchableOpacity>
-            
         </View>
     )
 }
 
 const styles = StyleSheet.create({
     container: {
-        height: 80,
+        height: 60,
         flexDirection: 'row',
         justifyContent: 'space-around',
         padding: 15,

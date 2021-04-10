@@ -1,12 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
 import React, {useState, useEffect, useRef} from 'react';
-import { StyleSheet, Text, View, Alert } from 'react-native';
+import { StyleSheet, Text, View, Alert, Button, TouchableOpacity } from 'react-native';
 import Constants from 'expo-constants'
 import TopBar from './components/TopBar'
 import axios from 'axios'
 import SwipeableImage from './components/SwipeableImage'
 import BottomBar from './components/BottomBar'
 import Swipes from './components/Swipes'
+import ProfilePage from './components/ProfilePage'
+import Modal from 'react-native-modal';
+import DisplayProfile from './components/ProfilePage';
+import {FontAwesome5, FontAwesome} from '@expo/vector-icons'
 import data from './db/jobs.json'
 export default function App() {
 
@@ -15,7 +19,8 @@ export default function App() {
   const [pictures, setPictures] = useState(data.jobs[currentJobIndex].pictures)
   const [currentPicIndex, setPicIndex] = useState(0)
   const swipesRef = useRef(null)
-
+  const [isProfileVisible, setProfileVisible] = useState(false);
+ 
   function getJson(){
     try{
       setJobs(data.jobs)
@@ -78,12 +83,23 @@ export default function App() {
     swipesRef.current.openLeft()
   }
   function handleProfilePress(){
-    swipesRef.current.openRight()
+    setProfileVisible(!isProfileVisible);
+    console.log("profile")
+  }
+  function handleBackPress(){
+    setProfileVisible(!isProfileVisible);
+    console.log("back")
   }
 
   return (
     <View style={styles.container}>
       <TopBar handleHomePress={handleHomePress} handleProfilePress={handleProfilePress}/>
+      <Modal isVisible={isProfileVisible} >
+        <TouchableOpacity style={styles.button} onPress={handleBackPress}>
+                <FontAwesome5 name="arrow-left" size={27} color="#5c5c5c"/>
+        </TouchableOpacity>
+        <ProfilePage handleBackPress={handleBackPress}></ProfilePage>
+        </Modal>
       <View style={styles.swipes}>
         {pictures.length > 1 && 
           pictures.map(
@@ -124,4 +140,20 @@ const styles = StyleSheet.create({
     shadowRadius: 4.65,
     elevation:7,
   },
+  button: {
+    width: 50,
+    height: 50,
+    backgroundColor: 'white',
+    borderRadius: 25,
+    justifyContent: 'center',
+    alignItems: 'center',
+    shadowColor: '#000',
+    shadowOffset: {
+        width: 0,
+        height: 0,
+    },
+    shadowOpacity: 0.15,
+    shadowRadius: 6.46,
+    elevation: 9
+  }
 });
