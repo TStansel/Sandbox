@@ -5,7 +5,9 @@ import {FontAwesome} from '@expo/vector-icons'
 export default function SwipeableImage({job, pictures, picIndex}) {
     return (
         <View>
+            
             <View style={styles.photoContainer}>
+                <Text style={[styles.imageText]}>  (Swipe to see more office photos)</Text>
                 <Image source={{uri: pictures[picIndex]}} style={styles.photo} />
             </View>
             <View style={styles.textContainer}>
@@ -47,7 +49,8 @@ const styles = StyleSheet.create({
         borderColor: '#F06795'
     },
     photoContainer:{
-        height: '100%'
+        height: '100%',
+        flexDirection: 'column'
     },
     photo: {
         
@@ -64,6 +67,12 @@ const styles = StyleSheet.create({
     textRow: {
         flexDirection: 'row',
         alignItems: 'center',
+    },
+    imageText: {
+        color: 'black',
+        marginLeft: 10,
+        fontSize: 25,
+        marginBottom: 25,
     },
     textPrimary: {
         color: 'black',

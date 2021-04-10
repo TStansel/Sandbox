@@ -45,6 +45,7 @@ export default function App() {
 
   function handleLike(){
     nextPicture()
+    console.log("like")
   }
 
   function handlePass(){
@@ -52,8 +53,12 @@ export default function App() {
   }
 
   function nextPicture(){
-    console.log("handle pic")
     const nextIndex = pictures.length - 1 == currentPicIndex ? 0 : currentPicIndex + 1
+    setPicIndex(nextIndex)
+  }
+
+  function backPicture(){
+    const nextIndex = 0 == currentPicIndex ? pictures.length - 1 : currentPicIndex - 1
     setPicIndex(nextIndex)
   }
 
