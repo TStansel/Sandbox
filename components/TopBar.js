@@ -9,7 +9,7 @@ import squareLogo from './../images/squareLogo.png'
 export default function TopBar({handleHomePress, handleProfilePress}) {
     return (
         <View style={styles.container}>
-            <TouchableOpacity style={styles.button} onPress={handleHomePress}>
+            <TouchableOpacity style={styles.button} >
                 <Image source={squareLogo} style={styles.logo}></Image>
             </TouchableOpacity>
             <TouchableOpacity style={styles.button} onPress={handleProfilePress}>
