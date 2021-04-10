@@ -4,7 +4,7 @@ import { StyleSheet, Text, View, Alert, TouchableHighlight, TouchableOpacity } f
 import Constants from 'expo-constants'
 import TopBar from './components/TopBar'
 import axios from 'axios'
-import SwipeableImage from './components/SwipeableImage'
+import student from './db/student.json'
 import BottomBar from './components/BottomBar'
 import Swipes from './components/Swipes'
 import ProfilePage from './components/ProfilePage'
@@ -110,7 +110,14 @@ export default function App() {
 
   function handleApplicationSubmit(){
     Alert.alert('Congratulations!','Your application was submitted!', [{text: 'Close', onPress:() => handleApplicationPress()}])
-    //setApplicationVisible(!isApplicationVisible);
+    studentReturn = {
+      name: student.name,
+      school: student.university,
+      gpa: student.gpa,
+      major: student.major
+    }
+    axios.post('http://10.37.9.157:5000/api/', studentReturn)
+    console.log(studentReturn)
   }
 
   function handleBackPress(){
