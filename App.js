@@ -35,8 +35,6 @@ export default function App() {
     }
   }
 
-  
-
   useEffect(() => {
     console.log(jobs.length)
   }, [])
