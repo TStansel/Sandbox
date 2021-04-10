@@ -1,18 +1,19 @@
 {
     "pictures": [
-      "1",
-      "2",
-      "3"
+      "https://d2jyir0m79gs60.cloudfront.net/news/images/successful-college-student-lg.png",
+      "https://www.saraharberson.com/hubfs/SH-community-service-blog.jpg",
+      "https://unofficialnetworks.com/wp-content/uploads/sites/88/2014/02/shutterstock_98801030.jpg",
+      "https://miro.medium.com/max/6000/1*Mhr1_HX249t8ludv5qjWQg.jpeg"
     ],
-    "name": "",
-    "gpa": "gold",
-    "major": "Electrical Engineering",
+    "name": "Johnny Christopherson",
+    "gpa": "3.5",
+    "major": "Applied and Computational Mathematics",
     "university": "Brigham Young University",
-    "grad_year": "2023",
+    "grad_year": "2022",
     "degree": "Bachelors",
-    "relevant_exp": [],
-    "volunteer_exp": [],
-    "awards": [],
-    "availbility_date": "",
-    "linked_in": ""
+    "relevant_exp": ["Wealth Management Intern at Goldman Sachs", "Summer Analyst at Crewe captial", "Route Manager at Aptive Environmental"],
+    "volunteer_exp": ["Missionary at The Church of Jesus Christ of Latter-day Saints", "Weekly volunteer at Utah Regional Hospital cancer center.", "Math tutor at Brigham Young University."],
+    "awards": ["Magna Cum Laude at Brigham Young University", "Top selling rookie at Adaptive Environmental", "Took 1st place at the Sandbox Hackathon"],
+    "availbility_date": "Summer 2021",
+    "linked_in": "www.linkedin.com/in/JohnnyChristopherson13"
   }
