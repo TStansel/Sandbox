@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React, {useState, useEffect, useRef} from 'react';
-import { StyleSheet, Text, View, Alert, Button } from 'react-native';
+import { StyleSheet, Text, View, Alert, Button, TouchableOpacity } from 'react-native';
 import Constants from 'expo-constants'
 import TopBar from './components/TopBar'
 import axios from 'axios'
@@ -10,6 +10,7 @@ import Swipes from './components/Swipes'
 import ProfilePage from './components/ProfilePage'
 import Modal from 'react-native-modal';
 import DisplayProfile from './components/ProfilePage';
+import {FontAwesome5, FontAwesome} from '@expo/vector-icons'
 
 export default function App() {
   const [users, setUsers] = useState([])
@@ -66,7 +67,9 @@ export default function App() {
     <View style={styles.container}>
       <TopBar handleHomePress={handleHomePress} handleProfilePress={handleProfilePress}/>
       <Modal isVisible={isProfileVisible} >
-        <Button title="Close Profile View" onPress={handleBackPress} />
+        <TouchableOpacity style={styles.button} onPress={handleBackPress}>
+                <FontAwesome5 name="arrow-left" size={27} color="#5c5c5c"/>
+        </TouchableOpacity>
         <ProfilePage handleBackPress={handleBackPress}></ProfilePage>
         </Modal>
       <View style={styles.swipes}>
@@ -107,4 +110,20 @@ const styles = StyleSheet.create({
     shadowRadius: 4.65,
     elevation:7,
   },
+  button: {
+    width: 50,
+    height: 50,
+    backgroundColor: 'white',
+    borderRadius: 25,
+    justifyContent: 'center',
+    alignItems: 'center',
+    shadowColor: '#000',
+    shadowOffset: {
+        width: 0,
+        height: 0,
+    },
+    shadowOpacity: 0.15,
+    shadowRadius: 6.46,
+    elevation: 9
+  }
 });
