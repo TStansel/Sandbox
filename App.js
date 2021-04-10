@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React, {useState, useEffect, useRef} from 'react';
-import { StyleSheet, Text, View, Alert, Button, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, Alert, TouchableHighlight, TouchableOpacity } from 'react-native';
 import Constants from 'expo-constants'
 import TopBar from './components/TopBar'
 import axios from 'axios'
@@ -109,6 +109,11 @@ export default function App() {
     setApplicationVisible(!isApplicationVisible);
   }
 
+  function handleApplicationSubmit(){
+    setApplicationVisible(!isApplicationVisible);
+    Alert.alert('Congratulations!','Your application was submitted!', [{text: 'Close',}])
+  }
+
   function handleBackPress(){
     setProfileVisible(!isProfileVisible);
   }
@@ -140,7 +145,12 @@ export default function App() {
         <TouchableOpacity style={styles.button} onPress={handleApplicationBackPress}>
                 <FontAwesome5 name="arrow-left" size={27} color="#5c5c5c"/>
         </TouchableOpacity>
-        <ApplyPage handleBackPress={handleApplicationBackPress}></ApplyPage>
+        <ApplyPage handleBackPress={handleApplicationBackPress} job={jobs[currentJobIndex]}></ApplyPage>
+        <TouchableHighlight onPress={handleApplicationSubmit}>
+                <View style={styles.submitButton}>
+                    <Text style={styles.submitText}>Submit</Text>
+                </View>
+            </TouchableHighlight>
       </Modal>
       <View style={styles.swipes}>
         {pictures.length > 1 && 
@@ -197,5 +207,28 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.15,
     shadowRadius: 6.46,
     elevation: 9
-  }
+  },
+  submitButton: {
+    marginTop: 5,
+    width: 385,
+    height: 75,
+    backgroundColor: '#64EDCC',
+    borderRadius: 5,
+    justifyContent: 'center',
+    alignItems: 'center',
+    shadowColor: '#000',
+    shadowOffset: {
+        width: 0,
+        height: 0,
+    },
+    shadowOpacity: 0.15,
+    shadowRadius: 6.46,
+    elevation: 9,
+    color: '#64EDCC',
+  },
+  submitText: {
+    color: 'white',
+    fontWeight: 'bold',
+    fontSize: 22,
+  },
 });
