@@ -2,103 +2,43 @@
     "jobs": [
         {
             "pictures": [
-              "./../images/appleLogo.png",
-              "2",
-              "3"
+              "https://media.glassdoor.com/sql/1549647/divvypay-squarelogo-1563289869394.png",
+              "https://media.glassdoor.com/l/1549647/divvypay-office.jpg",
+              "https://getdivvy.com/wp-content/uploads/2019/08/Divvy-ShareImage-NewHQ-2020.png"
             ],
-            "name": "Apple",
-            "location": "Santa Clara Valley (Cupertino), California",
+            "name": "Divvy",
+            "location": "Lehi, Utah",
             "salary": "$100,000",
             "tob_title": "Software Engineering Internship",
-            "job_description": "Backend Development - Making the features that Apple users love (like Siri) work by presenting data to the user-facing applications.",
+            "job_description": "Backend Development - Making the features that present data to the user-facing applications.",
             "qualifications": [
               "Proficiency in one or more of the following developer skills: Java, C/C++, PHP, Python, Ruby, Unix, MySQL, Clojure, Scala, Java Script, CSS, HTML5",
               "Experience with web frameworks such as AngularJS, NodeJS, SproutCore",
               "Experience in sophisticated methodologies such as Data Modeling, Validation, Processing, Hadoop, MapReduce, Mongo, Pig"
             ],
-            "benefits": "$1,000 / mo housing, 25% off apple products, health/vision/dental insurance.",
+            "benefits": "Free Divvy Card, Paid Time Off",
             "schedule": "9-5, M-F",
-            "website": "https://jobs.apple.com/en-us/details/200180413/software-engineering-internship?team=STDNT"
+            "website": "https://getdivvy.com/careers/"
           },
           {
             "pictures": [
-              "./../images/appleLogo.png",
-              "2",
-              "3"
+              "https://ww1.prweb.com/prfiles/2015/09/18/12971222/gI_90514_Chatbooks%20logo.png",
+              "https://media.glassdoor.com/l/76/ae/49/c3/our-first-chatfest-right-outside-our-office.jpg",
+              "https://media.glassdoor.com/l/4e/e9/d6/db/our-first-birthday-group-shot.jpg"
             ],
-            "name": "Apple",
-            "location": "Santa Clara Valley (Cupertino), California",
-            "salary": "$100,000",
-            "tob_title": "Software Engineering Internship",
-            "job_description": "Backend Development - Making the features that Apple users love (like Siri) work by presenting data to the user-facing applications.",
+            "name": "Chatbooks",
+            "location": "Lehi, Utah",
+            "salary": "$120,000",
+            "tob_title": "Front-end Web-developer",
+            "job_description": "Building the user interface for our website that is visited by potential customers.",
             "qualifications": [
-              "Proficiency in one or more of the following developer skills: Java, C/C++, PHP, Python, Ruby, Unix, MySQL, Clojure, Scala, Java Script, CSS, HTML5",
-              "Experience with web frameworks such as AngularJS, NodeJS, SproutCore",
-              "Experience in sophisticated methodologies such as Data Modeling, Validation, Processing, Hadoop, MapReduce, Mongo, Pig"
+              "Must be proficient in HTML5, CSS3, and JavaScript",
+              "Experience with the React JavaScript framework.",
+              "Moderate experience in UX design."
             ],
-            "benefits": "$1,000 / mo housing, 25% off apple products, health/vision/dental insurance.",
-            "schedule": "9-5, M-F",
-            "website": "https://jobs.apple.com/en-us/details/200180413/software-engineering-internship?team=STDNT"
-          },
-          {
-            "pictures": [
-              "./../images/appleLogo.png",
-              "2",
-              "3"
-            ],
-            "name": "Apple",
-            "location": "Santa Clara Valley (Cupertino), California",
-            "salary": "$100,000",
-            "tob_title": "Software Engineering Internship",
-            "job_description": "Backend Development - Making the features that Apple users love (like Siri) work by presenting data to the user-facing applications.",
-            "qualifications": [
-              "Proficiency in one or more of the following developer skills: Java, C/C++, PHP, Python, Ruby, Unix, MySQL, Clojure, Scala, Java Script, CSS, HTML5",
-              "Experience with web frameworks such as AngularJS, NodeJS, SproutCore",
-              "Experience in sophisticated methodologies such as Data Modeling, Validation, Processing, Hadoop, MapReduce, Mongo, Pig"
-            ],
-            "benefits": "$1,000 / mo housing, 25% off apple products, health/vision/dental insurance.",
-            "schedule": "9-5, M-F",
-            "website": "https://jobs.apple.com/en-us/details/200180413/software-engineering-internship?team=STDNT"
-          },
-          {
-            "pictures": [
-              "./../images/appleLogo.png",
-              "2",
-              "3"
-            ],
-            "name": "Apple",
-            "location": "Santa Clara Valley (Cupertino), California",
-            "salary": "$100,000",
-            "tob_title": "Software Engineering Internship",
-            "job_description": "Backend Development - Making the features that Apple users love (like Siri) work by presenting data to the user-facing applications.",
-            "qualifications": [
-              "Proficiency in one or more of the following developer skills: Java, C/C++, PHP, Python, Ruby, Unix, MySQL, Clojure, Scala, Java Script, CSS, HTML5",
-              "Experience with web frameworks such as AngularJS, NodeJS, SproutCore",
-              "Experience in sophisticated methodologies such as Data Modeling, Validation, Processing, Hadoop, MapReduce, Mongo, Pig"
-            ],
-            "benefits": "$1,000 / mo housing, 25% off apple products, health/vision/dental insurance.",
-            "schedule": "9-5, M-F",
-            "website": "https://jobs.apple.com/en-us/details/200180413/software-engineering-internship?team=STDNT"
-          },
-          {
-            "pictures": [
-              "./../images/appleLogo.png",
-              "2",
-              "3"
-            ],
-            "name": "Apple",
-            "location": "Santa Clara Valley (Cupertino), California",
-            "salary": "$100,000",
-            "tob_title": "Software Engineering Internship",
-            "job_description": "Backend Development - Making the features that Apple users love (like Siri) work by presenting data to the user-facing applications.",
-            "qualifications": [
-              "Proficiency in one or more of the following developer skills: Java, C/C++, PHP, Python, Ruby, Unix, MySQL, Clojure, Scala, Java Script, CSS, HTML5",
-              "Experience with web frameworks such as AngularJS, NodeJS, SproutCore",
-              "Experience in sophisticated methodologies such as Data Modeling, Validation, Processing, Hadoop, MapReduce, Mongo, Pig"
-            ],
-            "benefits": "$1,000 / mo housing, 25% off apple products, health/vision/dental insurance.",
-            "schedule": "9-5, M-F",
-            "website": "https://jobs.apple.com/en-us/details/200180413/software-engineering-internship?team=STDNT"
+            "benefits": "Health Insurance, 401 K",
+            "schedule": "10-7, M-F",
+            "website": "https://chatbooks.com/careers"
           }
     ]
 }
