@@ -39,7 +39,7 @@ export default function App() {
   
 
   useEffect(() => {
-    console.log(jobs[currentJobIndex])
+    console.log(jobs.length)
   }, [])
 
   function handleLike(){
@@ -56,8 +56,11 @@ export default function App() {
   }
 
   function nextJob(){
+    console.log("handle job")
     const nextIndex = jobs.length - 2 == currentJobIndex ? 0 : currentJobIndex + 1
-    setCurrentJobIndex(nextIndex)
+    console.log(currentJobIndex)
+    setJobIndex(nextIndex)
+    console.log(currentJobIndex)
   }
 
   function handleCheckPress(){
@@ -68,11 +71,11 @@ export default function App() {
   }
 
   function handleRightPress(){
-    swipesRef.current.openLeft()
+    nextJob()
     setPicIndex(0)
   }
   function handleLeftPress(){
-    swipesRef.current.openRight()
+    nextJob()
     setPicIndex(0)
   }
 
