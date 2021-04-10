@@ -8,8 +8,11 @@ import SwipeableImage from './components/SwipeableImage'
 import BottomBar from './components/BottomBar'
 import Swipes from './components/Swipes'
 export default function App() {
+
   const [users, setUsers] = useState([])
   const [currentIndex, setCurrentIndex] = useState(0)
+  const [jobs, setJobs] = useState([])
+  const [currentJobIndex, setJobIndex] = useState(0)
   const swipesRef = useRef(null)
 
   async function fetchUsers(){
@@ -22,8 +25,19 @@ export default function App() {
     }
   }
 
+  async function getJson(){
+    try{
+      const data = require('./db/jobs.json')
+      setJobs(data.jobs)
+    } catch (error) {
+      console.log(error)
+      Alert.alert('Error getting users','', [{text: 'Retry', onPress: () => fetchUsers()}])
+    }
+  }
+
   useEffect(() => {
     fetchUsers()
+    getJson()
   }, [])
 
   function handleLike(){
@@ -37,6 +51,11 @@ export default function App() {
   function nextUser(){
     const nextIndex = users.length - 2 == currentIndex ? 0 : currentIndex + 1
     setCurrentIndex(nextIndex)
+  }
+
+  function nextJob(){
+    const nextIndex = jobs.length - 2 == currentJobIndex ? 0 : currentJobIndex + 1
+    setCurrentJobIndex(nextIndex)
   }
 
   function handleCheckPress(){
