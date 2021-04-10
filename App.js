@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import React, {useState, useEffect, } from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 import { StyleSheet, Text, View, Alert } from 'react-native';
 import Constants from 'expo-constants'
 import TopBar from './components/TopBar'
@@ -10,6 +10,8 @@ import Swipes from './components/Swipes'
 export default function App() {
   const [users, setUsers] = useState([])
   const [currentIndex, setCurrentIndex] = useState(0)
+  const swipesRef = useRef(null)
+
   async function fetchUsers(){
     try{
       const {data} = await axios.get('https://randomuser.me/api/?gender=female&results=50')
@@ -37,6 +39,13 @@ export default function App() {
     setCurrentIndex(nextIndex)
   }
 
+  function handleLikePress(){
+    swipesRef.current.openLeft()
+  }
+  function handlePassPress(){
+    swipesRef.current.openRight()
+  }
+
   return (
     <View style={styles.container}>
       <TopBar />
@@ -44,10 +53,18 @@ export default function App() {
         {users.length > 1 && 
           users.map(
             (u,i) => (
-              currentIndex == i && (<Swipes key={i} currentIndex={currentIndex} users={users} handleLike={handleLike} handlePass={handlePass}></Swipes>)
+              currentIndex == i && (
+              <Swipes 
+                key={i} 
+                ref={swipesRef}
+                currentIndex={currentIndex} 
+                users={users} 
+                handleLike={handleLike} 
+                handlePass={handlePass}
+                ></Swipes>)
           ))}
         </View>
-      <BottomBar />
+      <BottomBar handleLikePress={handleLikePress} handlePassPress={handlePassPress}/>
     </View>
   );
 }
