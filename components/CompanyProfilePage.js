@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import {
   StyleSheet,
   Text,
@@ -47,6 +48,7 @@ export default class CompanyProfilePage extends Component {
         <View style={styles.outerTextContainer}>
             <View style={styles.innerTextContainer}>
                 <Text style={styles.infoHeader}> Benefits: </Text><Text style={styles.info}> {this.props.job.benefits} </Text>
+
             </View>
         </View>
         <View style={styles.outerTextContainer}>
@@ -54,6 +56,7 @@ export default class CompanyProfilePage extends Component {
                 <Text style={styles.infoHeader}> Company Website: </Text><Text style={styles.info}> {this.props.job.website} </Text>
             </View>
         </View>
+
         </View>
         
     );
@@ -64,6 +67,7 @@ const styles = StyleSheet.create({
   nameView:{
     alignItems: 'center',
     textAlign: 'center',
+
   },
   extra:{
     paddingBottom: 20,

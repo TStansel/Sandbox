@@ -1,37 +1,40 @@
 import React, { Component } from 'react';
-import data from '../db/student.json'
 import {
   StyleSheet,
   Text,
   View,
-  Image,
-  TouchableOpacity
+  TextInput,
+  Image
 } from 'react-native';
 
 export default class ApplyPage extends Component {
 
+    
+
   render() {
     return (
       <View style={styles.container}>
-          <View style={styles.header}></View>
-          <View style={styles.body}>
-            <View style={styles.bodyContent}>
-              <Text style={styles.info}>UX Designer / Mobile developer</Text>
-              <Text style={styles.description}>Lorem ipsum dolor sit amet, saepe sapientem eu nam. Qui ne assum electram expetendis, omittam deseruisse consequuntur ius an,</Text>
-            </View>
-            <Text style={styles.name}> {data.name} </Text>
-        </View>
-                <Text style={styles.info}> GPA: {data.gpa} </Text>
-                <Text style={styles.info}> School: {data.university} </Text>
-                <Text style={styles.info}> Major: {data.major} </Text>
-                <Text style={styles.info}> Degree Pursuing: {data.degree} </Text>
-                <Text style={styles.info}> Graduation Year: {data.grad_year} </Text>
-                <Text style={styles.info}> Relevant Work Experience:{"\n"} 1.) {data.relevant_exp[0]} {"\n"} 2.) {data.relevant_exp[1]} {"\n"} 3.) {data.relevant_exp[2]}</Text>
-                <Text style={styles.info}> Volunteer Experience:{"\n"} 1.) {data.volunteer_exp[0]} {"\n"} 2.) {data.volunteer_exp[1]} {"\n"} 3.) {data.volunteer_exp[2]}</Text>
-                <Text style={styles.info}> Awards:{"\n"} 1.) {data.awards[0]} {"\n"} 2.) {data.awards[1]} {"\n"} 3.) {data.awards[2]}</Text>
-                <Text style={styles.info}> Available to work: {data.availbility_date} </Text>
-                <Text style={styles.info}> LinkedIn Profile: {data.linked_in} </Text>
+          
 
+          <View style={styles.body}>
+            <Image style={styles.img} source={{uri: this.props.job.pictures[0]}}></Image>
+            <Text style={styles.prompt}> {this.props.job.question} </Text>
+        </View>
+        <TextInput
+            style={{ 
+    	        height: 100, 
+                margin: 10,
+                borderRadius: 10,
+                textAlign: 'center',
+    	        borderColor: 'gray', 
+                fontSize: 18,
+    	        borderWidth: 2,
+            }}
+	        placeholder="Write your response here!"
+            multiline={true}
+
+            />
+            
         </View>
         
     );
@@ -49,21 +52,13 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     borderRadius: 10,
   },
-  avatar: {
-    width: 130,
-    height: 130,
-    borderRadius: 63,
-    borderWidth: 4,
-    borderColor: "white",
+  img: {
+    width: 320,
+    height: 85,
+    borderRadius: 5,
     marginBottom:10,
     alignSelf:'center',
-    position: 'absolute',
-    marginTop:130
-  },
-  name:{
-    fontSize:22,
-    color:"#FFFFFF",
-    fontWeight:'600',
+    marginTop:1
   },
   body:{
     marginTop:40,
@@ -73,10 +68,12 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     padding:30,
   },
-  name:{
+  prompt:{
     fontSize:28,
     color: "#696969",
-    fontWeight: "600"
+    fontWeight: "600",
+    margin: 10,
+    textAlign: 'center'
   },
   info:{
     fontSize:16,
