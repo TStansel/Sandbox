@@ -42,7 +42,7 @@ function Swipes({ pictures, jobs, picIndex, currentIndex, handleLike, handlePass
         onSwipeableLeftWillOpen={() => setWillLike(true)}
         onSwipeableRightWillOpen={() => setWillPass(true)}  
         >
-            <SwipeableImage job={jobs[currentIndex]} pictures={pictures} picIndex={picIndex}/>
+            <SwipeableImage job={jobs[currentIndex]} pictures={pictures} picIndex={picIndex+1}/>
         </Swipeable>
     )
 }
