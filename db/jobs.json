@@ -2,14 +2,14 @@
     "jobs": [
         {
             "pictures": [
-              "./../images/appleLogo.png",
-              "2",
+              "http://logok.org/wp-content/uploads/2014/04/Apple-Logo-black.png",
+              "https://d15shllkswkct0.cloudfront.net/wp-content/blogs.dir/1/files/2020/06/apple-park.png",
               "3"
             ],
             "name": "Apple",
             "location": "Santa Clara Valley (Cupertino), California",
             "salary": "$100,000",
-            "tob_title": "Software Engineering Internship",
+            "job_title": "Software Engineering Internship",
             "job_description": "Backend Development - Making the features that Apple users love (like Siri) work by presenting data to the user-facing applications.",
             "qualifications": [
               "Proficiency in one or more of the following developer skills: Java, C/C++, PHP, Python, Ruby, Unix, MySQL, Clojure, Scala, Java Script, CSS, HTML5",
@@ -29,7 +29,7 @@
             "name": "Apple",
             "location": "Santa Clara Valley (Cupertino), California",
             "salary": "$100,000",
-            "tob_title": "Software Engineering Internship",
+            "job_title": "Software Engineering Internship",
             "job_description": "Backend Development - Making the features that Apple users love (like Siri) work by presenting data to the user-facing applications.",
             "qualifications": [
               "Proficiency in one or more of the following developer skills: Java, C/C++, PHP, Python, Ruby, Unix, MySQL, Clojure, Scala, Java Script, CSS, HTML5",
@@ -49,7 +49,7 @@
             "name": "Apple",
             "location": "Santa Clara Valley (Cupertino), California",
             "salary": "$100,000",
-            "tob_title": "Software Engineering Internship",
+            "job_title": "Software Engineering Internship",
             "job_description": "Backend Development - Making the features that Apple users love (like Siri) work by presenting data to the user-facing applications.",
             "qualifications": [
               "Proficiency in one or more of the following developer skills: Java, C/C++, PHP, Python, Ruby, Unix, MySQL, Clojure, Scala, Java Script, CSS, HTML5",
@@ -69,7 +69,7 @@
             "name": "Apple",
             "location": "Santa Clara Valley (Cupertino), California",
             "salary": "$100,000",
-            "tob_title": "Software Engineering Internship",
+            "job_title": "Software Engineering Internship",
             "job_description": "Backend Development - Making the features that Apple users love (like Siri) work by presenting data to the user-facing applications.",
             "qualifications": [
               "Proficiency in one or more of the following developer skills: Java, C/C++, PHP, Python, Ruby, Unix, MySQL, Clojure, Scala, Java Script, CSS, HTML5",
@@ -89,7 +89,7 @@
             "name": "Apple",
             "location": "Santa Clara Valley (Cupertino), California",
             "salary": "$100,000",
-            "tob_title": "Software Engineering Internship",
+            "job_title": "Software Engineering Internship",
             "job_description": "Backend Development - Making the features that Apple users love (like Siri) work by presenting data to the user-facing applications.",
             "qualifications": [
               "Proficiency in one or more of the following developer skills: Java, C/C++, PHP, Python, Ruby, Unix, MySQL, Clojure, Scala, Java Script, CSS, HTML5",
