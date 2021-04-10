@@ -63,6 +63,12 @@ export default function App() {
     setPictures(jobs[nextIndex].pictures)
   }
 
+  function backJob(){
+    const nextIndex = 0 == currentJobIndex ? jobs.length - 1 : currentJobIndex - 1
+    setJobIndex(nextIndex)
+    setPictures(jobs[nextIndex].pictures)
+  }
+
   function handleCheckPress(){
     swipesRef.current.openLeft()
   }
@@ -75,7 +81,7 @@ export default function App() {
     setPicIndex(0)
   }
   function handleLeftPress(){
-    nextJob()
+    backJob()
     setPicIndex(0)
   }
 
