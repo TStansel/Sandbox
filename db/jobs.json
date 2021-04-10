@@ -8,7 +8,7 @@
             ],
             "name": "Divvy",
             "location": "Lehi, Utah",
-            "salary": "$100,000",
+            "salary": "$100,000 a year",
             "job_title": "Software Engineering Internship",
             "job_description": "Backend Development - Making the features that present data to the user-facing applications.",
             "qualifications": [
@@ -29,7 +29,7 @@
             ],
             "name": "Chatbooks",
             "location": "Lehi, Utah",
-            "salary": "$120,000",
+            "salary": "$120,000 a year",
             "job_title": "Front-end Web-developer",
             "job_description": "Building the user interface for our website that is visited by potential customers.",
             "qualifications": [
@@ -39,6 +39,46 @@
             ],
             "schedule":"10-7, M-F",
             "website": "https://chatbooks.com/careers"
+          },
+          {
+            "pictures": [
+
+              "https://www.bamboohr.com/images/global-logos/bamboohr-logo-main.svg",
+              "https://media.glassdoor.com/l/b3/8f/26/93/new-bambooligans-january-2018.jpg",
+              "https://media.glassdoor.com/l/a0/4a/62/32/customer-service-training.jpg",
+              "https://media.glassdoor.com/sql/676898/bamboohr-squarelogo-1475861595158.png"
+            ],
+            "name": "Bamboo HR",
+            "location": "Lindon, Utah",
+            "salary": "$18 an hour",
+            "job_title": "Native iOS and MacOs Application Developer",
+            "job_description": "Create iOS applications to help HR employees comunicate with the executives.",
+            "qualifications": [
+              "Proficient in Objective-C or Swift",
+              "Experience with developing applicaitons in Xcode using Cocoa and CocoaTouch"
+            ],
+            "schedule":"40 hours a week",
+            "website": "https://www.indeed.com/jobs?q=BambooHR&l=Various+locations&mna=5&aceid=&gclid=Cj0KCQjwmcWDBhCOARIsALgJ2Qdc9GPsxWwmdrXBIDgoEcg1vEKmdrIOHyGzg4lEQJ5lrohNHN1g3hQaAoyWEALw_wcB"
+          },
+          {
+            "pictures": [
+
+              "https://media.glassdoor.com/sql/116643/bluehost-squarelogo-1430258983749.png",
+              "https://media.glassdoor.com/l/e4/20/63/a2/ping-pong-in-the-lounge.jpg",
+              "https://media.glassdoor.com/l/c5/27/ef/84/headquarters.jpg"
+            ],
+            "name": "Bluehost",
+            "location": "Orem, Utah",
+            "salary": "$25 an hour",
+            "job_title": "Server Maintenance Specialist",
+            "job_description": "Help ouc clients to maintain the servers to host their websites. ",
+            "qualifications": [
+              "Proficient in Linux commandline",
+              "Experience with Vim or Emacs",
+              "Understanding of HTTP, TCP, and other pertainate protocalls."
+            ],
+            "schedule":"8PM-4AM (Night Shift)",
+            "website": "https://www.bluehost.com/bluehost/careers.html"
           }
     ]
 }
