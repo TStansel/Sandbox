@@ -18,7 +18,8 @@
             ],
             "benefits": "Free Divvy Card, Paid Time Off",
             "schedule": "9-5, M-F",
-            "website": "https://getdivvy.com/careers/"
+            "website": "https://getdivvy.com/careers/",
+            "question": "Divvy prides themself in high quality code. What personal habits/methodologies do you use to ensure high quality code." 
           },
           {
             "pictures": [
@@ -38,7 +39,8 @@
               "Moderate experience in UX design."
             ],
             "schedule":"10-7, M-F",
-            "website": "https://chatbooks.com/careers"
+            "website": "https://chatbooks.com/careers",
+            "question": "What experience do you have in implimenting UX design with CSS?"
           },
           {
             "pictures": [
@@ -50,14 +52,15 @@
             "name": "Bamboo HR",
             "location": "Lindon, Utah",
             "salary": "$18 an hour",
-            "job_title": "Native iOS and MacOs Application Developer",
-            "job_description": "Create iOS applications to help HR employees comunicate with the executives.",
+            "job_title": "Native iOS and MacOS Application Developer",
+            "job_description": "Create applications to help HR employees comunicate with the executives.",
             "qualifications": [
               "Proficient in Objective-C or Swift",
               "Experience with developing applicaitons in Xcode using Cocoa and CocoaTouch"
             ],
             "schedule":"40 hours a week",
-            "website": "https://www.indeed.com/jobs?q=BambooHR&l=Various+locations&mna=5&aceid=&gclid=Cj0KCQjwmcWDBhCOARIsALgJ2Qdc9GPsxWwmdrXBIDgoEcg1vEKmdrIOHyGzg4lEQJ5lrohNHN1g3hQaAoyWEALw_wcB"
+            "website": "https://www.indeed.com/jobs?q=BambooHR&l=Various+locations&mna=5&aceid=&gclid=Cj0KCQjwmcWDBhCOARIsALgJ2Qdc9GPsxWwmdrXBIDgoEcg1vEKmdrIOHyGzg4lEQJ5lrohNHN1g3hQaAoyWEALw_wcB",
+            "question": "Briefly describe (in 50 words or less) what iOS or MacOS apps you have written."
           },
           {
             "pictures": [
@@ -77,7 +80,8 @@
               "Understanding of HTTP, TCP, and other pertainate protocalls."
             ],
             "schedule":"8PM-4AM (Night Shift)",
-            "website": "https://www.bluehost.com/bluehost/careers.html"
+            "website": "https://www.bluehost.com/bluehost/careers.html",
+            "question": "Briefly write a description of your competency in Linux, Vim/Emacs, and internet protocalls."
           }
     ]
 }
