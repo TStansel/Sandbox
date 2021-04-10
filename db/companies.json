@@ -1,0 +1,104 @@
+{
+    "companies": [
+        {
+            "pictures": [
+              "./../images/appleLogo.png",
+              "2",
+              "3"
+            ],
+            "name": "Apple",
+            "location": "Santa Clara Valley (Cupertino), California",
+            "salary": "$100,000",
+            "tob_title": "Software Engineering Internship",
+            "job_description": "Backend Development - Making the features that Apple users love (like Siri) work by presenting data to the user-facing applications.",
+            "qualifications": [
+              "Proficiency in one or more of the following developer skills: Java, C/C++, PHP, Python, Ruby, Unix, MySQL, Clojure, Scala, Java Script, CSS, HTML5",
+              "Experience with web frameworks such as AngularJS, NodeJS, SproutCore",
+              "Experience in sophisticated methodologies such as Data Modeling, Validation, Processing, Hadoop, MapReduce, Mongo, Pig"
+            ],
+            "benefits": "$1,000 / mo housing, 25% off apple products, health/vision/dental insurance.",
+            "schedule": "9-5, M-F",
+            "website": "https://jobs.apple.com/en-us/details/200180413/software-engineering-internship?team=STDNT"
+          },
+          {
+            "pictures": [
+              "./../images/appleLogo.png",
+              "2",
+              "3"
+            ],
+            "name": "Apple",
+            "location": "Santa Clara Valley (Cupertino), California",
+            "salary": "$100,000",
+            "tob_title": "Software Engineering Internship",
+            "job_description": "Backend Development - Making the features that Apple users love (like Siri) work by presenting data to the user-facing applications.",
+            "qualifications": [
+              "Proficiency in one or more of the following developer skills: Java, C/C++, PHP, Python, Ruby, Unix, MySQL, Clojure, Scala, Java Script, CSS, HTML5",
+              "Experience with web frameworks such as AngularJS, NodeJS, SproutCore",
+              "Experience in sophisticated methodologies such as Data Modeling, Validation, Processing, Hadoop, MapReduce, Mongo, Pig"
+            ],
+            "benefits": "$1,000 / mo housing, 25% off apple products, health/vision/dental insurance.",
+            "schedule": "9-5, M-F",
+            "website": "https://jobs.apple.com/en-us/details/200180413/software-engineering-internship?team=STDNT"
+          },
+          {
+            "pictures": [
+              "./../images/appleLogo.png",
+              "2",
+              "3"
+            ],
+            "name": "Apple",
+            "location": "Santa Clara Valley (Cupertino), California",
+            "salary": "$100,000",
+            "tob_title": "Software Engineering Internship",
+            "job_description": "Backend Development - Making the features that Apple users love (like Siri) work by presenting data to the user-facing applications.",
+            "qualifications": [
+              "Proficiency in one or more of the following developer skills: Java, C/C++, PHP, Python, Ruby, Unix, MySQL, Clojure, Scala, Java Script, CSS, HTML5",
+              "Experience with web frameworks such as AngularJS, NodeJS, SproutCore",
+              "Experience in sophisticated methodologies such as Data Modeling, Validation, Processing, Hadoop, MapReduce, Mongo, Pig"
+            ],
+            "benefits": "$1,000 / mo housing, 25% off apple products, health/vision/dental insurance.",
+            "schedule": "9-5, M-F",
+            "website": "https://jobs.apple.com/en-us/details/200180413/software-engineering-internship?team=STDNT"
+          },
+          {
+            "pictures": [
+              "./../images/appleLogo.png",
+              "2",
+              "3"
+            ],
+            "name": "Apple",
+            "location": "Santa Clara Valley (Cupertino), California",
+            "salary": "$100,000",
+            "tob_title": "Software Engineering Internship",
+            "job_description": "Backend Development - Making the features that Apple users love (like Siri) work by presenting data to the user-facing applications.",
+            "qualifications": [
+              "Proficiency in one or more of the following developer skills: Java, C/C++, PHP, Python, Ruby, Unix, MySQL, Clojure, Scala, Java Script, CSS, HTML5",
+              "Experience with web frameworks such as AngularJS, NodeJS, SproutCore",
+              "Experience in sophisticated methodologies such as Data Modeling, Validation, Processing, Hadoop, MapReduce, Mongo, Pig"
+            ],
+            "benefits": "$1,000 / mo housing, 25% off apple products, health/vision/dental insurance.",
+            "schedule": "9-5, M-F",
+            "website": "https://jobs.apple.com/en-us/details/200180413/software-engineering-internship?team=STDNT"
+          },
+          {
+            "pictures": [
+              "./../images/appleLogo.png",
+              "2",
+              "3"
+            ],
+            "name": "Apple",
+            "location": "Santa Clara Valley (Cupertino), California",
+            "salary": "$100,000",
+            "tob_title": "Software Engineering Internship",
+            "job_description": "Backend Development - Making the features that Apple users love (like Siri) work by presenting data to the user-facing applications.",
+            "qualifications": [
+              "Proficiency in one or more of the following developer skills: Java, C/C++, PHP, Python, Ruby, Unix, MySQL, Clojure, Scala, Java Script, CSS, HTML5",
+              "Experience with web frameworks such as AngularJS, NodeJS, SproutCore",
+              "Experience in sophisticated methodologies such as Data Modeling, Validation, Processing, Hadoop, MapReduce, Mongo, Pig"
+            ],
+            "benefits": "$1,000 / mo housing, 25% off apple products, health/vision/dental insurance.",
+            "schedule": "9-5, M-F",
+            "website": "https://jobs.apple.com/en-us/details/200180413/software-engineering-internship?team=STDNT"
+          }
+    ]
+}
