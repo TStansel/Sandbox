@@ -36,7 +36,6 @@ export default function App() {
   }
 
   useEffect(() => {
-    console.log(jobs.length)
   }, [])
 
   function handleLike(){
@@ -54,10 +53,9 @@ export default function App() {
   }
 
   function nextJob(){
-    console.log("handle job")
     const nextIndex = jobs.length - 1 == currentJobIndex ? 0 : currentJobIndex + 1
     setJobIndex(nextIndex)
-    setPictures(jobs[currentJobIndex].pictures)
+    setPictures(jobs[nextIndex].pictures)
   }
 
   function handleCheckPress(){
