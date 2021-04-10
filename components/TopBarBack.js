@@ -1,28 +1,23 @@
 import React from 'react'
-import {View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native'
+import {View, Text, StyleSheet, TouchableOpacity } from 'react-native'
 import {FontAwesome5, FontAwesome} from '@expo/vector-icons'
 import Modal from 'react-native-modal';
 import ProfilePage from './ProfilePage'
-import squareLogo from './../images/squareLogo.png'
 
 
-export default function TopBar({handleHomePress, handleProfilePress}) {
+export default function TopBarBack({handleBackPress}) {
     return (
         <View style={styles.container}>
-            <TouchableOpacity style={styles.button} onPress={handleHomePress}>
-                <Image source={squareLogo} style={styles.logo}></Image>
+            <TouchableOpacity style={styles.button} onPress={ () => handleBackPress}>
+                <FontAwesome5 name="arrow-left" size={27} color="#5c5c5c"/>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.button} onPress={handleProfilePress}>
-                <FontAwesome name="user" size={27} color="#5c5c5c"/>
-            </TouchableOpacity>
-            
         </View>
     )
 }
 
 const styles = StyleSheet.create({
     container: {
-        height: 80,
+        height: 60,
         flexDirection: 'row',
         justifyContent: 'space-around',
         padding: 15,
@@ -51,9 +46,5 @@ const styles = StyleSheet.create({
         shadowOpacity: 0.15,
         shadowRadius: 6.46,
         elevation: 9
-    },
-    logo: {
-        width: 50,
-        height: 50,
     },
 })
