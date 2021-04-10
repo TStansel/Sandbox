@@ -9,7 +9,7 @@
             "name": "Divvy",
             "location": "Lehi, Utah",
             "salary": "$100,000",
-            "tob_title": "Software Engineering Internship",
+            "job_title": "Software Engineering Internship",
             "job_description": "Backend Development - Making the features that present data to the user-facing applications.",
             "qualifications": [
               "Proficiency in one or more of the following developer skills: Java, C/C++, PHP, Python, Ruby, Unix, MySQL, Clojure, Scala, Java Script, CSS, HTML5",
@@ -22,6 +22,7 @@
           },
           {
             "pictures": [
+
               "https://ww1.prweb.com/prfiles/2015/09/18/12971222/gI_90514_Chatbooks%20logo.png",
               "https://media.glassdoor.com/l/76/ae/49/c3/our-first-chatfest-right-outside-our-office.jpg",
               "https://media.glassdoor.com/l/4e/e9/d6/db/our-first-birthday-group-shot.jpg"
@@ -29,15 +30,14 @@
             "name": "Chatbooks",
             "location": "Lehi, Utah",
             "salary": "$120,000",
-            "tob_title": "Front-end Web-developer",
+            "job_title": "Front-end Web-developer",
             "job_description": "Building the user interface for our website that is visited by potential customers.",
             "qualifications": [
               "Must be proficient in HTML5, CSS3, and JavaScript",
               "Experience with the React JavaScript framework.",
               "Moderate experience in UX design."
             ],
-            "benefits": "Health Insurance, 401 K",
-            "schedule": "10-7, M-F",
+            "schedule":"10-7, M-F",
             "website": "https://chatbooks.com/careers"
           }
     ]
