@@ -1,6 +1,7 @@
 { 
   "jobs": [
       {
+          "logo": "https://media.glassdoor.com/sql/1549647/divvypay-squarelogo-1563289869394.png",
           "pictures": [
             "https://www.insightpartners.com//assets/media/2019/12/Divvy.png",
             "https://media.glassdoor.com/l/1549647/divvypay-office.jpg",
@@ -22,6 +23,7 @@
           "question": "Divvy prides themself in high quality code. What personal habits/methodologies do you use to ensure high quality code." 
         },
         {
+          "logo": "https://ww1.prweb.com/prfiles/2015/09/18/12971222/gI_90514_Chatbooks%20logo.png",
           "pictures": [
 
             "https://images.squarespace-cdn.com/content/v1/5c253e5dc258b456dd8217df/1547485852436-FAEYVOB298OACL6W9QFO/ke17ZwdGBToddI8pDm48kEMJz_jd-g36kmypioQ0LOtZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIQscvaC3g28Ju6M-Nirnlftrcz_nDWGrsBHAaUfWdN5MKMshLAGzx4R3EDFOm1kBS/Chatbooks-Logo.jpg",
@@ -43,6 +45,7 @@
           "question": "What experience do you have in implimenting UX design with CSS?"
         },
         {
+          "logo": "https://www.bamboohr.com/images/global-logos/bamboohr-logo-main.svg",
           "pictures": [
 
             "https://employeecycle.com/wp-content/uploads/2019/08/bambooHR-1.png",
@@ -63,6 +66,7 @@
           "question": "Briefly describe (in 50 words or less) what iOS or MacOS apps you have written."
         },
         {
+          "logo": "https://media.glassdoor.com/sql/116643/bluehost-squarelogo-1430258983749.png",
           "pictures": [
 
             "https://cdn.wpml.org/wp-content/uploads/2018/04/Bluehost-Logo-EPS-vector-image.png",
