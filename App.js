@@ -39,16 +39,23 @@ export default function App() {
     setCurrentIndex(nextIndex)
   }
 
-  function handleLikePress(){
+  function handleCheckPress(){
     swipesRef.current.openLeft()
   }
-  function handlePassPress(){
+  function handleInfoPress(){
+    swipesRef.current.openRight()
+  }
+
+  function handleHomePress(){
+    swipesRef.current.openLeft()
+  }
+  function handleProfilePress(){
     swipesRef.current.openRight()
   }
 
   return (
     <View style={styles.container}>
-      <TopBar />
+      <TopBar handleHomePress={handleHomePress} handleProfilePress={handleProfilePress}/>
       <View style={styles.swipes}>
         {users.length > 1 && 
           users.map(
@@ -64,7 +71,7 @@ export default function App() {
                 ></Swipes>)
           ))}
         </View>
-      <BottomBar handleLikePress={handleLikePress} handlePassPress={handlePassPress}/>
+      <BottomBar handleCheckPress={handleCheckPress} handleInfoPress={handleInfoPress}/>
     </View>
   );
 }

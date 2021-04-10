@@ -1,13 +1,17 @@
 import React from 'react'
-import {View, Text, StyleSheet} from 'react-native'
+import {View, Text, StyleSheet, TouchableOpacity} from 'react-native'
 import {FontAwesome5, FontAwesome} from '@expo/vector-icons'
 
-export default function TopBar() {
+export default function TopBar({handleHomePress, handleProfilePress}) {
     return (
         <View style={styles.container}>
-            <FontAwesome5 name="fire" size={27} color="#F06795"/>
-            <FontAwesome name="comments" size={27} color="#5c5c5c"/>
-            <FontAwesome name="user" size={27} color="#5c5c5c"/>
+            <TouchableOpacity style={styles.button} onPress={handleHomePress}>
+                <FontAwesome5 name="clipboard" size={27} color="#5c5c5c"/>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.button} onPress={handleProfilePress}>
+                <FontAwesome name="user" size={27} color="#5c5c5c"/>
+            </TouchableOpacity>
+            
         </View>
     )
 }
@@ -27,5 +31,21 @@ const styles = StyleSheet.create({
         shadowOpacity: 0.12,
         shadowRadius: 5.46,
         elevation: 9,
-    }
+    },
+    button: {
+        width: 50,
+        height: 50,
+        backgroundColor: 'white',
+        borderRadius: 25,
+        justifyContent: 'center',
+        alignItems: 'center',
+        shadowColor: '#000',
+        shadowOffset: {
+            width: 0,
+            height: 0,
+        },
+        shadowOpacity: 0.15,
+        shadowRadius: 6.46,
+        elevation: 9
+    },
 })
