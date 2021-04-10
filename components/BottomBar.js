@@ -10,10 +10,10 @@ export default function BottomBar({handleLeftPress, handleRightPress, handleChec
                 <FontAwesome name="info" size={27} color="#5c5c5c"></FontAwesome>
             </TouchableOpacity>
             <TouchableOpacity style={styles.button} onPress={handleLeftPress}>
-                <FontAwesome name="arrow-left" size={27} color="#64EDCC"></FontAwesome>
+                <FontAwesome name="arrow-left" size={27} color="#6bbfe9"></FontAwesome>
             </TouchableOpacity>
             <TouchableOpacity style={styles.button} onPress={handleRightPress}>
-                <FontAwesome name="arrow-right" size={27} color="#64EDCC"></FontAwesome>
+                <FontAwesome name="arrow-right" size={27} color="#6bbfe9"></FontAwesome>
             </TouchableOpacity>
             <TouchableOpacity style={styles.button} onPress={handleCheckPress}>
                 <FontAwesome name="check" size={27} color="#64EDCC"></FontAwesome>

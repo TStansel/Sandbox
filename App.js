@@ -27,8 +27,7 @@ export default function App() {
 
   async function getCompanyPics(){
     try{
-      console.log(data.jobs[0].name)
-      setPictures(data.jobs[0].pictures)
+      setPictures(data.jobs[currentJobIndex].pictures)
       
     } catch (error) {
       console.log(error)
@@ -51,16 +50,16 @@ export default function App() {
   }
 
   function nextPicture(){
-    const nextIndex = pictures.length - 2 == currentPicIndex ? 0 : currentPicIndex + 1
+    console.log("handle pic")
+    const nextIndex = pictures.length - 1 == currentPicIndex ? 0 : currentPicIndex + 1
     setPicIndex(nextIndex)
   }
 
   function nextJob(){
     console.log("handle job")
-    const nextIndex = jobs.length - 2 == currentJobIndex ? 0 : currentJobIndex + 1
-    console.log(currentJobIndex)
+    const nextIndex = jobs.length - 1 == currentJobIndex ? 0 : currentJobIndex + 1
     setJobIndex(nextIndex)
-    console.log(currentJobIndex)
+    setPictures(jobs[currentJobIndex].pictures)
   }
 
   function handleCheckPress(){
@@ -97,7 +96,7 @@ export default function App() {
               <Swipes 
                 key={i} 
                 ref={swipesRef}
-                currentIndex={currentPicIndex} 
+                currentIndex={currentJobIndex} 
                 jobs={jobs}
                 pictures={pictures} 
                 picIndex={currentPicIndex}
