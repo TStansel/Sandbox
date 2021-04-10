@@ -4,6 +4,7 @@ import Swipeable from 'react-native-gesture-handler/Swipeable'
 import {RectButton} from 'react-native-gesture-handler'
 import SwipeableImage from './SwipeableImage'
 
+
 function Swipes({ users, currentIndex, handleLike, handlePass, swipesRef}) {
     const [willLike, setWillLike] = useState(false)
     const [willPass, setWillPass] = useState(false)

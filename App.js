@@ -1,17 +1,21 @@
 import { StatusBar } from 'expo-status-bar';
 import React, {useState, useEffect, useRef} from 'react';
-import { StyleSheet, Text, View, Alert } from 'react-native';
+import { StyleSheet, Text, View, Alert, Button } from 'react-native';
 import Constants from 'expo-constants'
 import TopBar from './components/TopBar'
 import axios from 'axios'
 import SwipeableImage from './components/SwipeableImage'
 import BottomBar from './components/BottomBar'
 import Swipes from './components/Swipes'
+import ProfilePage from './components/ProfilePage'
+import Modal from 'react-native-modal';
+import DisplayProfile from './components/ProfilePage';
+
 export default function App() {
   const [users, setUsers] = useState([])
   const [currentIndex, setCurrentIndex] = useState(0)
   const swipesRef = useRef(null)
-
+  const [isProfileVisible, setProfileVisible] = useState(false);
   async function fetchUsers(){
     try{
       const {data} = await axios.get('https://randomuser.me/api/?gender=female&results=50')
@@ -50,12 +54,21 @@ export default function App() {
     swipesRef.current.openLeft()
   }
   function handleProfilePress(){
-    swipesRef.current.openRight()
+    setProfileVisible(!isProfileVisible);
+    console.log("profile")
+  }
+  function handleBackPress(){
+    setProfileVisible(!isProfileVisible);
+    console.log("back")
   }
 
   return (
     <View style={styles.container}>
       <TopBar handleHomePress={handleHomePress} handleProfilePress={handleProfilePress}/>
+      <Modal isVisible={isProfileVisible} >
+        <Button title="Close Profile View" onPress={handleBackPress} />
+        <ProfilePage handleBackPress={handleBackPress}></ProfilePage>
+        </Modal>
       <View style={styles.swipes}>
         {users.length > 1 && 
           users.map(
