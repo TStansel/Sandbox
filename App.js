@@ -46,6 +46,13 @@ export default function App() {
     swipesRef.current.openRight()
   }
 
+  function handleRightPress(){
+    swipesRef.current.openLeft()
+  }
+  function handleLeftPress(){
+    swipesRef.current.openRight()
+  }
+
   function handleHomePress(){
     swipesRef.current.openLeft()
   }
@@ -71,7 +78,7 @@ export default function App() {
                 ></Swipes>)
           ))}
         </View>
-      <BottomBar handleCheckPress={handleCheckPress} handleInfoPress={handleInfoPress}/>
+      <BottomBar handleCheckPress={handleCheckPress} handleInfoPress={handleInfoPress} handleRightPress={handleRightPress} handleLeftPress={handleLeftPress}/>
     </View>
   );
 }
