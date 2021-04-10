@@ -21,7 +21,7 @@ export default function TopBar({handleHomePress, handleProfilePress}) {
 
 const styles = StyleSheet.create({
     container: {
-        height: 60,
+        height: 80,
         flexDirection: 'row',
         justifyContent: 'space-around',
         padding: 15,

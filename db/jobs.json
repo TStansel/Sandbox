@@ -1,0 +1,81 @@
+{
+  "jobs": [
+      {
+          "pictures": [
+            "https://www.insightpartners.com//assets/media/2019/12/Divvy.png",
+            "https://media.glassdoor.com/l/1549647/divvypay-office.jpg",
+            "https://getdivvy.com/wp-content/uploads/2019/08/Divvy-ShareImage-NewHQ-2020.png"
+          ],
+          "name": "Divvy",
+          "location": "Lehi, Utah",
+          "salary": "$100,000 a year",
+          "job_title": "Software Engineering Internship",
+          "job_description": "Backend Development - Making the features that present data to the user-facing applications.",
+          "qualifications": [
+            "Proficiency in one or more of the following developer skills: Java, C/C++, PHP, Python, Ruby, Unix, MySQL, Clojure, Scala, Java Script, CSS, HTML5",
+            "Experience with web frameworks such as AngularJS, NodeJS, SproutCore",
+            "Experience in sophisticated methodologies such as Data Modeling, Validation, Processing, Hadoop, MapReduce, Mongo, Pig"
+          ],
+          "benefits": "Free Divvy Card, Paid Time Off",
+          "schedule": "9-5, M-F",
+          "website": "https://getdivvy.com/careers/"
+        },
+        {
+          "pictures": [
+
+            "https://images.squarespace-cdn.com/content/v1/5c253e5dc258b456dd8217df/1547485852436-FAEYVOB298OACL6W9QFO/ke17ZwdGBToddI8pDm48kEMJz_jd-g36kmypioQ0LOtZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIQscvaC3g28Ju6M-Nirnlftrcz_nDWGrsBHAaUfWdN5MKMshLAGzx4R3EDFOm1kBS/Chatbooks-Logo.jpg",
+            "https://media.glassdoor.com/l/76/ae/49/c3/our-first-chatfest-right-outside-our-office.jpg",
+            "https://media.glassdoor.com/l/4e/e9/d6/db/our-first-birthday-group-shot.jpg"
+          ],
+          "name": "Chatbooks",
+          "location": "Lehi, Utah",
+          "salary": "$120,000 a year",
+          "job_title": "Front-end Web-developer",
+          "job_description": "Building the user interface for our website that is visited by potential customers.",
+          "qualifications": [
+            "Must be proficient in HTML5, CSS3, and JavaScript",
+            "Experience with the React JavaScript framework.",
+            "Moderate experience in UX design."
+          ],
+          "schedule":"10-7, M-F",
+          "website": "https://chatbooks.com/careers"
+        },
+        {
+          "pictures": [
+              "https://employeecycle.com/wp-content/uploads/2019/08/bambooHR-1.png",
+              "https://media.glassdoor.com/l/b3/8f/26/93/new-bambooligans-january-2018.jpg",
+              "https://media.glassdoor.com/l/a0/4a/62/32/customer-service-training.jpg"
+            ],
+            "name": "Bamboo HR",
+            "location": "Lindon, Utah",
+            "salary": "$18 an hour",
+            "job_title": "Native iOS and MacOs Application Developer",
+            "job_description": "Create iOS applications to help HR employees comunicate with the executives.",
+            "qualifications": [
+              "Proficient in Objective-C or Swift",
+              "Experience with developing applicaitons in Xcode using Cocoa and CocoaTouch"
+            ],
+            "schedule":"40 hours a week",
+            "website": "https://www.indeed.com/jobs?q=BambooHR&l=Various+locations&mna=5&aceid=&gclid=Cj0KCQjwmcWDBhCOARIsALgJ2Qdc9GPsxWwmdrXBIDgoEcg1vEKmdrIOHyGzg4lEQJ5lrohNHN1g3hQaAoyWEALw_wcB"
+          },
+          {
+            "pictures": [
+            "https://cdn.wpml.org/wp-content/uploads/2018/04/Bluehost-Logo-EPS-vector-image.png",
+            "https://media.glassdoor.com/l/e4/20/63/a2/ping-pong-in-the-lounge.jpg",
+            "https://media.glassdoor.com/l/c5/27/ef/84/headquarters.jpg"
+          ],
+          "name": "Bluehost",
+          "location": "Orem, Utah",
+          "salary": "$25 an hour",
+          "job_title": "Server Maintenance Specialist",
+          "job_description": "Help ouc clients to maintain the servers to host their websites. ",
+          "qualifications": [
+            "Proficient in Linux commandline",
+            "Experience with Vim or Emacs",
+            "Understanding of HTTP, TCP, and other pertainate protocalls."
+          ],
+          "schedule":"8PM-4AM (Night Shift)",
+          "website": "https://www.bluehost.com/bluehost/careers.html"
+        }
+  ]
+}
