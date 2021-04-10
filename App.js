@@ -48,7 +48,6 @@ export default function App() {
 
   function handleLike(){
     nextPicture()
-    console.log("like")
   }
 
   function handlePass(){
@@ -110,12 +109,16 @@ export default function App() {
   }
 
   function handleApplicationSubmit(){
-    setApplicationVisible(!isApplicationVisible);
-    Alert.alert('Congratulations!','Your application was submitted!', [{text: 'Close',}])
+    Alert.alert('Congratulations!','Your application was submitted!', [{text: 'Close', onPress:() => handleApplicationPress()}])
+    //setApplicationVisible(!isApplicationVisible);
   }
 
   function handleBackPress(){
     setProfileVisible(!isProfileVisible);
+  }
+
+  function logSubmit(){
+    console.log('submit')
   }
 
   function handleApplicationBackPress(){

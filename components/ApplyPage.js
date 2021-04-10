@@ -22,16 +22,17 @@ export default class ApplyPage extends Component {
         </View>
         <TextInput
             style={{ 
-    	    height: 100, 
-            margin: 10,
-            borderRadius: 10,
-            textAlign: 'center',
-    	    borderColor: 'gray', 
-            fontSize: 18,
-    	    borderWidth: 2,
-    	    placeholderTextColor: 'gray',
+    	        height: 100, 
+                margin: 10,
+                borderRadius: 10,
+                textAlign: 'center',
+    	        borderColor: 'gray', 
+                fontSize: 18,
+    	        borderWidth: 2,
             }}
 	        placeholder="Write your response here!"
+            multiline={true}
+
             />
             
         </View>
