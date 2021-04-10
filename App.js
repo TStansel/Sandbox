@@ -11,37 +11,56 @@ import ProfilePage from './components/ProfilePage'
 import Modal from 'react-native-modal';
 import DisplayProfile from './components/ProfilePage';
 import {FontAwesome5, FontAwesome} from '@expo/vector-icons'
-
+import data from './db/jobs.json'
 export default function App() {
-  const [users, setUsers] = useState([])
-  const [currentIndex, setCurrentIndex] = useState(0)
+
+  const [jobs, setJobs] = useState(data.jobs)
+  const [currentJobIndex, setJobIndex] = useState(0)
+  const [pictures, setPictures] = useState(data.jobs[currentJobIndex].pictures)
+  const [currentPicIndex, setPicIndex] = useState(0)
   const swipesRef = useRef(null)
   const [isProfileVisible, setProfileVisible] = useState(false);
-  async function fetchUsers(){
+ 
+  function getJson(){
     try{
-      const {data} = await axios.get('https://randomuser.me/api/?gender=female&results=50')
-      setUsers(data.results)
+      setJobs(data.jobs)
     } catch (error) {
       console.log(error)
-      Alert.alert('Error getting users','', [{text: 'Retry', onPress: () => fetchUsers()}])
+      Alert.alert('Error getting jobs','', [{text: 'Retry', onPress: () => getJson()}])
+    }
+  }
+
+  async function getCompanyPics(){
+    try{
+      setPictures(data.jobs[currentJobIndex].pictures)
+      
+    } catch (error) {
+      console.log(error)
+      Alert.alert('Error getting pics','', [{text: 'Retry', onPress: () => getCompanyPics()}])
     }
   }
 
   useEffect(() => {
-    fetchUsers()
   }, [])
 
   function handleLike(){
-    nextUser()
+    nextPicture()
   }
 
   function handlePass(){
-    nextUser()
+    nextPicture()
   }
 
-  function nextUser(){
-    const nextIndex = users.length - 2 == currentIndex ? 0 : currentIndex + 1
-    setCurrentIndex(nextIndex)
+  function nextPicture(){
+    console.log("handle pic")
+    const nextIndex = pictures.length - 1 == currentPicIndex ? 0 : currentPicIndex + 1
+    setPicIndex(nextIndex)
+  }
+
+  function nextJob(){
+    const nextIndex = jobs.length - 1 == currentJobIndex ? 0 : currentJobIndex + 1
+    setJobIndex(nextIndex)
+    setPictures(jobs[nextIndex].pictures)
   }
 
   function handleCheckPress(){
@@ -49,6 +68,15 @@ export default function App() {
   }
   function handleInfoPress(){
     swipesRef.current.openRight()
+  }
+
+  function handleRightPress(){
+    nextJob()
+    setPicIndex(0)
+  }
+  function handleLeftPress(){
+    nextJob()
+    setPicIndex(0)
   }
 
   function handleHomePress(){
@@ -73,21 +101,23 @@ export default function App() {
         <ProfilePage handleBackPress={handleBackPress}></ProfilePage>
         </Modal>
       <View style={styles.swipes}>
-        {users.length > 1 && 
-          users.map(
+        {pictures.length > 1 && 
+          pictures.map(
             (u,i) => (
-              currentIndex == i && (
+              currentPicIndex == i && (
               <Swipes 
                 key={i} 
                 ref={swipesRef}
-                currentIndex={currentIndex} 
-                users={users} 
+                currentIndex={currentJobIndex} 
+                jobs={jobs}
+                pictures={pictures} 
+                picIndex={currentPicIndex}
                 handleLike={handleLike} 
                 handlePass={handlePass}
                 ></Swipes>)
           ))}
         </View>
-      <BottomBar handleCheckPress={handleCheckPress} handleInfoPress={handleInfoPress}/>
+      <BottomBar handleCheckPress={handleCheckPress} handleInfoPress={handleInfoPress} handleRightPress={handleRightPress} handleLeftPress={handleLeftPress}/>
     </View>
   );
 }
