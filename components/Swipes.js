@@ -11,7 +11,7 @@ function Swipes({ pictures, jobs, picIndex, currentIndex, handleLike, handlePass
     const renderLeftActions = () => {
         return (
             <RectButton style={styles.container}>
-                <SwipeableImage job={jobs[currentIndex]} pictures={pictures} picIndex={picIndex=1}></SwipeableImage>
+                <SwipeableImage job={jobs[currentIndex]} pictures={pictures} picIndex={picIndex+1}></SwipeableImage>
             </RectButton>
         )
     }
@@ -42,7 +42,7 @@ function Swipes({ pictures, jobs, picIndex, currentIndex, handleLike, handlePass
         onSwipeableLeftWillOpen={() => setWillLike(true)}
         onSwipeableRightWillOpen={() => setWillPass(true)}  
         >
-            <SwipeableImage job={jobs[currentIndex]} pictures={pictures} picIndex={picIndex+1}/>
+            <SwipeableImage job={jobs[currentIndex]} pictures={pictures} picIndex={picIndex}/>
         </Swipeable>
     )
 }
