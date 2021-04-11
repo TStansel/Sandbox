@@ -4,7 +4,7 @@ Sandbox is a new program at BYU for students to take two of their semesters and 
 
 ## Team Members
  - Cody Arvonen | [Email](codyarvonen@gmail.com) | [LinkedIn](https://www.linkedin.com/in/cody-arvonen-41034b207/)
- - Timothy Brown | [Email]tabrownies@gmail.com 
+ - Timothy Brown | [Email](tabrownies@gmail.com)
  - Carter Nelson | [Email](carterwaynenelson@gmail.com) | [LinkedIn](https://www.linkedin.com/in/carternelson13/)
  - Thomas Stansel | [Email](thomas.s.stansel@gmail.com) | [LinkedIn](https://www.linkedin.com/in/thomas-stansel/)
 
