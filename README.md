@@ -3,9 +3,11 @@
 Sandbox is a new program at BYU for students to take two of their semesters and attempt to create a successful tech startup. This 30 hour hackathon is a part of the application process.
 
 ## Team Members
- - Cody Arvonen codyarvonen@gmail.com https://www.linkedin.com/in/cody-arvonen-41034b207/
+ - Cody Arvonen 
+     - [Email](codyarvonen@gmail.com)
+     - [LinkedIn] (https://www.linkedin.com/in/cody-arvonen-41034b207/)
  - Timothy Brown tabrownies@gmail.com 
- - Carter Nelson carterwaynenelson@gmail.com https://www.linkedin.com/in/carternelson13/
+ - Carter Nelson [Email](carterwaynenelson@gmail.com) [LinkedIn] (https://www.linkedin.com/in/carternelson13/)
  - Thomas Stansel thomas.s.stansel@gmail.com https://www.linkedin.com/in/thomas-stansel/
 
 # Athena
